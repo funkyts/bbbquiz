@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>브랜드바이북 | 아마존 책 출간 잠재력 진단</title>
+    <title>브랜드바이북 | 아마존 출간으로 당신의 브랜드 가치는 얼마나 상승할까?</title>
     <style>
         * {
             margin: 0;
@@ -12,9 +12,10 @@
         }
 
         :root {
-            --primary-color: #C41E3A;
-            --primary-light: #E6304F;
-            --primary-dark: #9B1829;
+            --primary-color: #2d5a4f;
+            --primary-light: #4a8b7a;
+            --primary-dark: #1a3d33;
+            --accent-color: #6bb199;
             --text-dark: #1a1a1a;
             --text-light: #666666;
             --bg-light: #F8F9FA;
@@ -135,7 +136,7 @@
         .benefit-item:hover {
             transform: translateY(-5px);
             border-color: var(--primary-color);
-            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.1);
+            box-shadow: 0 8px 20px rgba(45, 90, 79, 0.1);
         }
 
         .benefit-icon {
@@ -161,13 +162,16 @@
             cursor: pointer;
             width: 100%;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+            box-shadow: 0 4px 15px rgba(45, 90, 79, 0.3);
+            text-decoration: none;
+            display: block;
+            text-align: center;
         }
 
         .cta-button:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+            box-shadow: 0 6px 20px rgba(45, 90, 79, 0.4);
         }
 
         .progress-container {
@@ -347,39 +351,6 @@
             margin-bottom: 15px;
         }
 
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-label {
-            display: block;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 10px;
-            font-size: 15px;
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 14px 18px;
-            border: 2px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            color: var(--text-dark);
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
-        }
-
-        textarea.form-input {
-            min-height: 120px;
-            resize: vertical;
-        }
-
         .score-bar {
             width: 100%;
             height: 35px;
@@ -400,6 +371,28 @@
             color: white;
             font-weight: 700;
             font-size: 15px;
+        }
+
+        .value-increase {
+            text-align: center;
+            margin: 30px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            border-radius: 20px;
+            color: white;
+        }
+
+        .value-number {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .value-label {
+            font-size: 20px;
+            font-weight: 600;
+            opacity: 0.95;
         }
 
         @media (max-width: 768px) {
@@ -426,6 +419,10 @@
             .nav-button {
                 width: 100%;
             }
+
+            .value-number {
+                font-size: 56px;
+            }
         }
     </style>
 </head>
@@ -438,44 +435,44 @@
             </div>
 
             <div class="stats-banner">
-                🔥 이번 주에만 <strong>327명</strong>의 사장님이 무료 진단을 완료했습니다
+                🔥 이번 달 <strong>427명</strong>의 CEO가 자신의 브랜드 가치 상승률을 확인했습니다
             </div>
 
             <h1>
                 아마존 책 한 권으로<br>
-                <span class="highlight">당신의 몸값은 얼마나 올라갈까요?</span>
+                <span class="highlight">당신의 브랜드 가치는 얼마나 상승할까요?</span>
             </h1>
 
             <p class="subtitle">
                 단 3분 투자로 확인하는<br>
-                글로벌 시장 진출 준비도 & 브랜드 가치 상승 가능성
+                나와 기업의 브랜드 가치 상승 잠재력
             </p>
 
             <div class="benefits">
                 <div class="benefit-item">
-                    <div class="benefit-icon">📚</div>
-                    <div class="benefit-text">아마존 출간<br>성공 가능성 진단</div>
+                    <div class="benefit-icon">💎</div>
+                    <div class="benefit-text">브랜드 가치<br>상승률 예측</div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon">💼</div>
-                    <div class="benefit-text">맞춤형<br>출간 전략 제시</div>
+                    <div class="benefit-icon">📊</div>
+                    <div class="benefit-text">CEO 영향력<br>분석</div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon">⏱️</div>
-                    <div class="benefit-text">시간/비용<br>절약 방법 안내</div>
+                    <div class="benefit-icon">🌍</div>
+                    <div class="benefit-text">글로벌 시장<br>진출 가능성</div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon">🎯</div>
-                    <div class="benefit-text">출간전문가와<br>상담</div>
+                    <div class="benefit-icon">💰</div>
+                    <div class="benefit-text">예상 ROI<br>계산</div>
                 </div>
             </div>
 
             <div class="fomo-badge">
-                ⚡ 이번 달 한정 특별 혜택 | 아마존 출간 관련 무료 상담
+                ⚡ 이번 달 한정 | 진단 완료 시 맞춤형 출간 전략 리포트 제공
             </div>
 
             <button class="cta-button" onclick="startQuiz()">
-                3분 만에 무료로 진단받기 →
+                3분 만에 내 브랜드 가치 확인하기 →
             </button>
 
             <p style="text-align: center; margin-top: 25px; color: var(--text-light); font-size: 14px;">
@@ -489,7 +486,7 @@
                 <div class="progress-bar">
                     <div class="progress-fill" id="progressFill"></div>
                 </div>
-                <div class="progress-text" id="progressText">질문 1 / 15</div>
+                <div class="progress-text" id="progressText">질문 1 / 12</div>
             </div>
 
             <div id="questionContainer"></div>
@@ -511,7 +508,12 @@
             </div>
 
             <h2>🎉 진단 완료!</h2>
-            <p class="subtitle">사장님의 아마존 책 출간 준비도 분석 결과입니다</p>
+            <p class="subtitle">CEO님의 브랜드 가치 상승 잠재력 분석 결과입니다</p>
+
+            <div class="value-increase">
+                <div class="value-number" id="valueIncrease">+0%</div>
+                <div class="value-label">예상 브랜드 가치 상승률</div>
+            </div>
 
             <div id="resultsContainer"></div>
 
@@ -520,146 +522,131 @@
                 <p id="recommendationText"></p>
             </div>
 
-            <button class="cta-button" onclick="showContactForm()">
-                무료 30분 상담 신청하기 →
-            </button>
+            <a href="https://bbb-sooty.vercel.app/" class="cta-button" target="_blank">
+                더 자세히 알아보기 →
+            </a>
             
             <p style="text-align: center; margin-top: 20px; color: var(--text-light); font-size: 14px;">
-                ✓ 아마존 출간 전문가가 직접 상담 &nbsp;|&nbsp; ✓ 맞춤형 전략 제시
+                ✓ 아마존 출간 전문가 상담 &nbsp;|&nbsp; ✓ 맞춤형 출간 전략 제시
             </p>
-        </div>
-
-        <!-- Contact Form -->
-        <div id="contactForm" class="card hidden">
-            <div class="logo">
-                <div class="brand-name">브랜드바이북</div>
-            </div>
-            
-            <h2>📞 무료 상담 예약</h2>
-            <p class="subtitle">아마존 책 출간 전문가가 사장님의 성공을 위해 직접 상담해드립니다</p>
-
-            <form id="consultingForm" onsubmit="submitForm(event)">
-                <div class="form-group">
-                    <label class="form-label">성함 *</label>
-                    <input type="text" class="form-input" name="name" required placeholder="홍길동">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">이메일 *</label>
-                    <input type="email" class="form-input" name="email" required placeholder="example@email.com">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">연락처 *</label>
-                    <input type="tel" class="form-input" name="phone" required placeholder="010-0000-0000">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">책으로 다루고 싶은 주제 *</label>
-                    <input type="text" class="form-input" name="topic" required placeholder="예: 부동산 투자 노하우, AI 마케팅 전략 등">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">문의사항 (선택)</label>
-                    <textarea class="form-input" name="message" placeholder="궁금하신 점이나 특별히 상담받고 싶은 내용을 자유롭게 작성해주세요"></textarea>
-                </div>
-
-                <button type="submit" class="cta-button">
-                    무료 컨설팅 예약 완료하기
-                </button>
-                
-                <p style="text-align: center; margin-top: 20px; color: var(--text-light); font-size: 13px;">
-                    신청 후 24시간 내 연락드립니다
-                </p>
-            </form>
-        </div>
-
-        <!-- Thank You Screen -->
-        <div id="thankYouScreen" class="card hidden">
-            <div style="text-align: center; padding: 40px 0;">
-                <div style="font-size: 72px; margin-bottom: 20px;">✅</div>
-                <h2>신청이 완료되었습니다!</h2>
-                <p class="subtitle">
-                    브랜드바이북 전문가가<br>
-                    영업일 기준 24시간 내에 연락드리겠습니다
-                </p>
-                <p style="color: var(--text-light); margin-top: 30px; line-height: 1.8;">
-                    이메일로도 확인 메시지를 발송했습니다<br>
-                    (스팸함도 확인해주세요 😊)<br><br>
-                    상담 전 궁금하신 점이 있으시면<br>
-                    언제든지 연락주세요!
-                </p>
-            </div>
         </div>
     </div>
 
     <script>
-        // Quiz Data
+        // Quiz Data - 브랜드 가치 상승에 초점
         const questions = [
             {
-                category: '시장적합성',
-                question: '당신의 전문 분야는 아마존 베스트셀러 트렌드 중 어디에 속하나요?',
+                category: 'CEO 영향력',
+                question: '현재 CEO로서 당신의 대외적 인지도와 영향력은 어느 정도입니까?',
                 options: [
-                    { text: '성공 지향적인 노하우/지침 (자기계발)', score: 8 },
-                    { text: '삶의 성찰/허무 극복 (자기 배려)', score: 10 },
-                    { text: '특정 난치병 치료/기술 관련 전문 지식 (틈새 시장)', score: 9 }
+                    { text: '업계에서 널리 알려진 전문가로 인정받고 있다', score: 10, impact: 50 },
+                    { text: '업계 내에서 일정 수준의 인지도를 갖추고 있다', score: 7, impact: 35 },
+                    { text: '아직 대외적인 인지도가 거의 없는 상태다', score: 4, impact: 20 }
                 ]
             },
             {
-                category: '목표명확성',
-                question: '책이 출간된 후, 당신의 가장 중요한 목표는 무엇입니까?',
+                category: '기업 성장 단계',
+                question: '현재 기업의 성장 단계는 어디에 해당합니까?',
                 options: [
-                    { text: '책 판매 인세를 통한 자동 소득 확보', score: 7 },
-                    { text: '강연료 인상 또는 컨설팅/코칭 고객 확보', score: 10 },
-                    { text: '사업 아이템의 권위 강화 및 파트너십 제안', score: 9 }
+                    { text: '빠르게 성장 중이며, 브랜드 강화가 시급한 시점', score: 10, impact: 45 },
+                    { text: '안정적으로 운영 중이며, 다음 도약을 준비 중', score: 8, impact: 35 },
+                    { text: '창업 초기 단계로 브랜드 구축이 필요한 시점', score: 6, impact: 30 }
                 ]
             },
             {
-                category: '실행효율성',
-                question: '책 제작 시간을 획기적으로 줄이기 위해 외부 전문가(고스트라이터 등)에게 투자할 의향이 있습니까?',
+                category: '전문성 차별화',
+                question: '당신만의 독보적인 전문성이나 노하우가 명확합니까?',
                 options: [
-                    { text: '예. 효율성을 위해 비용 지출에 적극적이다', score: 10 },
-                    { text: '아니오. 스스로 글쓰는 어려움을 겪고 내공을 쌓겠다', score: 5 }
+                    { text: '명확한 차별점과 10년 이상의 실전 노하우가 있다', score: 10, impact: 40 },
+                    { text: '어느 정도 차별화된 전문성을 갖추고 있다', score: 7, impact: 25 },
+                    { text: '전문성은 있지만 명확한 차별화가 어렵다', score: 4, impact: 15 }
                 ]
             },
             {
-                category: '마케팅준비도',
-                question: '출판 전, 당신의 마케팅/영업 채널(블로그, SNS, 유튜브 등)의 잠재적 영향력은 어느 정도입니까?',
+                category: '콘텐츠 자산',
+                question: '그동안 축적한 콘텐츠 자산(강의자료, 블로그, 영상 등)이 얼마나 있습니까?',
                 options: [
-                    { text: '구독자/팔로워가 많고 강력한 채널이 있다', score: 10 },
-                    { text: '채널은 있지만 활용 경험이 적거나 규모가 작다', score: 7 },
-                    { text: '채널이 전혀 없다 (무명 작가 수준)', score: 5 }
+                    { text: '풍부한 콘텐츠 자산이 체계적으로 정리되어 있다', score: 10, impact: 30 },
+                    { text: '일부 콘텐츠가 있지만 산발적으로 흩어져 있다', score: 6, impact: 20 },
+                    { text: '거의 없거나, 처음부터 새로 만들어야 한다', score: 3, impact: 10 }
                 ]
             },
             {
-                category: '마케팅이해도',
-                question: '당신의 책이 아마존 검색 결과에서 독자의 시선을 사로잡는 가장 중요한 요소는 무엇이라고 생각하십니까?',
+                category: '목표 시장',
+                question: '책을 통해 도달하고자 하는 목표 시장은 어디입니까?',
                 options: [
-                    { text: '제목과 부제 (가장 중요한 마케팅 전략)', score: 10 },
-                    { text: '표지 디자인과 일러스트', score: 7 },
-                    { text: '리뷰 수와 평점', score: 6 }
+                    { text: '글로벌 시장 전체를 타겟으로 한다', score: 10, impact: 60 },
+                    { text: '북미나 유럽 등 특정 해외 시장', score: 8, impact: 45 },
+                    { text: '주로 국내 시장, 해외는 부차적', score: 5, impact: 25 }
                 ]
             },
             {
-                category: '시장전략',
-                question: '당신이 책을 판매하려는 글로벌 시장은 어디에 집중되어야 할까요?',
+                category: '사업 확장성',
+                question: '책 출간 후 연계할 수 있는 사업 모델이 준비되어 있습니까?',
                 options: [
-                    { text: '미국 아마존(.com)에 집중', score: 8 },
-                    { text: '전 세계 12개국 아마존 동시 배포', score: 10 },
-                    { text: '확대 배포(Expanded Distribution)를 통해 해외 오프라인 서점까지', score: 9 }
+                    { text: '강연, 컨설팅, 코칭 등 명확한 수익 모델이 있다', score: 10, impact: 50 },
+                    { text: '일부 아이디어는 있지만 구체화가 필요하다', score: 6, impact: 30 },
+                    { text: '아직 책 이후의 계획은 세우지 못했다', score: 3, impact: 15 }
+                ]
+            },
+            {
+                category: '마케팅 채널',
+                question: '현재 보유한 마케팅 채널(SNS, 유튜브, 블로그 등)의 규모는?',
+                options: [
+                    { text: '1만 명 이상의 적극적인 팔로워/구독자가 있다', score: 10, impact: 35 },
+                    { text: '수천 명 규모의 팔로워가 있다', score: 7, impact: 20 },
+                    { text: '아직 채널이 없거나 팔로워가 적다', score: 3, impact: 10 }
+                ]
+            },
+            {
+                category: '투자 준비도',
+                question: '책 제작 및 마케팅에 투자할 준비가 되어 있습니까?',
+                options: [
+                    { text: '고품질 결과를 위해 충분한 예산을 준비했다', score: 10, impact: 25 },
+                    { text: '적정 수준의 투자는 가능하다', score: 7, impact: 15 },
+                    { text: '최소 비용으로 진행하고 싶다', score: 4, impact: 10 }
+                ]
+            },
+            {
+                category: '시간 투자',
+                question: '책 제작 과정에 시간을 얼마나 투자할 수 있습니까?',
+                options: [
+                    { text: '전문가에게 맡기고 나는 핵심 인터뷰에만 집중', score: 10, impact: 20 },
+                    { text: '일부 시간을 내어 직접 참여하고 싶다', score: 7, impact: 15 },
+                    { text: '모든 과정에 직접 깊이 관여하고 싶다', score: 5, impact: 10 }
+                ]
+            },
+            {
+                category: '미디어 경험',
+                question: '미디어 노출이나 인터뷰 경험이 있습니까?',
+                options: [
+                    { text: '언론 인터뷰, 방송 출연 등 다수의 경험이 있다', score: 10, impact: 30 },
+                    { text: '몇 차례 경험이 있다', score: 6, impact: 15 },
+                    { text: '거의 없다', score: 3, impact: 5 }
+                ]
+            },
+            {
+                category: '네트워크',
+                question: '업계 내 네트워크와 추천인 확보가 가능합니까?',
+                options: [
+                    { text: '유명 인사나 전문가의 추천을 받을 수 있다', score: 10, impact: 35 },
+                    { text: '업계 동료들의 추천은 받을 수 있다', score: 7, impact: 20 },
+                    { text: '아직 추천을 부탁할 만한 네트워크가 부족하다', score: 3, impact: 10 }
+                ]
+            },
+            {
+                category: '실행 의지',
+                question: '아마존 책 출간에 대한 당신의 의지와 열정은?',
+                options: [
+                    { text: '반드시 해내겠다는 강한 의지가 있다', score: 10, impact: 40 },
+                    { text: '긍정적으로 고려하고 있다', score: 7, impact: 25 },
+                    { text: '아직 확신이 서지 않는다', score: 4, impact: 10 }
                 ]
             }
         ];
 
         let currentQuestion = 0;
         let answers = [];
-        let scores = {
-            V1: 0,
-            V2: 0,
-            V3: 0,
-            V4: 0,
-            V5: 0
-        };
 
         function startQuiz() {
             document.getElementById('welcomeScreen').classList.add('hidden');
@@ -725,7 +712,7 @@
             prevButton.disabled = currentQuestion === 0;
 
             if (currentQuestion === questions.length - 1) {
-                nextButton.textContent = '내 점수 확인하기 →';
+                nextButton.textContent = '내 브랜드 가치 확인하기 →';
                 nextButton.disabled = answers[currentQuestion] === undefined;
             } else {
                 nextButton.textContent = '다음 →';
@@ -752,45 +739,62 @@
         }
 
         function calculateResults() {
-            // Calculate total score
+            // Calculate total score and impact
             let totalScore = 0;
+            let totalImpact = 0;
             let maxScore = 0;
+            let maxImpact = 0;
 
             questions.forEach((question, index) => {
                 const answerIndex = answers[index];
                 totalScore += question.options[answerIndex].score;
-                maxScore += 10; // Max score per question
+                totalImpact += question.options[answerIndex].impact;
+                maxScore += 10;
+                maxImpact += Math.max(...question.options.map(o => o.impact));
             });
 
-            // Normalize to 0-100 scale
-            const finalScore = Math.round((totalScore / maxScore) * 100);
+            // Calculate brand value increase percentage
+            const brandValueIncrease = Math.round((totalImpact / maxImpact) * 500); // 최대 500% 상승
 
-            displayResults(finalScore, totalScore);
+            displayResults(totalScore, brandValueIncrease);
         }
 
-        function displayResults(finalScore, totalScore) {
+        function displayResults(totalScore, brandValueIncrease) {
             document.getElementById('quizScreen').classList.add('hidden');
             document.getElementById('resultScreen').classList.remove('hidden');
 
+            // Animate brand value increase
+            const valueElement = document.getElementById('valueIncrease');
+            let currentValue = 0;
+            const targetValue = brandValueIncrease;
+            const duration = 2000;
+            const increment = targetValue / (duration / 16);
+
+            const animation = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= targetValue) {
+                    currentValue = targetValue;
+                    clearInterval(animation);
+                }
+                valueElement.textContent = '+' + Math.round(currentValue) + '%';
+            }, 16);
+
             const categories = {
-                '시장적합성': { icon: '🎯', title: '시장 적합성' },
-                '목표명확성': { icon: '💡', title: '목표 명확성' },
-                '실행효율성': { icon: '⚡', title: '실행 효율성' },
-                '마케팅준비도': { icon: '📢', title: '마케팅 준비도' },
-                '마케팅이해도': { icon: '🧠', title: '마케팅 이해도' },
-                '시장전략': { icon: '🌍', title: '글로벌 시장 전략' }
+                'CEO 영향력': { icon: '👑', title: 'CEO 영향력' },
+                '기업 성장 단계': { icon: '🚀', title: '기업 성장 단계' },
+                '전문성 차별화': { icon: '⭐', title: '전문성 차별화' },
+                '콘텐츠 자산': { icon: '📚', title: '콘텐츠 자산' },
+                '목표 시장': { icon: '🌍', title: '목표 시장' },
+                '사업 확장성': { icon: '💼', title: '사업 확장성' },
+                '마케팅 채널': { icon: '📢', title: '마케팅 채널' },
+                '투자 준비도': { icon: '💰', title: '투자 준비도' },
+                '시간 투자': { icon: '⏰', title: '시간 투자' },
+                '미디어 경험': { icon: '📺', title: '미디어 경험' },
+                '네트워크': { icon: '🤝', title: '네트워크' },
+                '실행 의지': { icon: '🔥', title: '실행 의지' }
             };
 
-            let html = `
-                <div style="text-align: center; margin-bottom: 40px;">
-                    <div style="font-size: 64px; font-weight: 800; color: var(--primary-color);">
-                        ${finalScore}점
-                    </div>
-                    <p style="font-size: 18px; color: var(--text-light); margin-top: 10px;">
-                        아마존 책 출간 준비도 종합 점수
-                    </p>
-                </div>
-            `;
+            let html = '';
 
             questions.forEach((question, index) => {
                 const category = categories[question.category];
@@ -802,7 +806,7 @@
                     <div class="dimension-result">
                         <div class="dimension-title">${category.icon} ${category.title}</div>
                         <div class="score-bar">
-                            <div class="score-fill" style="width: ${scorePercent}%">${score}/10</div>
+                            <div class="score-fill" style="width: 0%">${score}/10</div>
                         </div>
                         <div class="dimension-description">${question.options[answerIndex].text}</div>
                     </div>
@@ -814,92 +818,37 @@
             // Generate recommendation
             let recommendation = '';
 
-            if (finalScore >= 85) {
-                recommendation = '🎉 <strong>완벽한 준비 상태입니다!</strong><br><br>사장님은 아마존 책 출간으로 최고의 성과를 낼 수 있는 완벽한 조건을 갖추고 계십니다. 브랜드바이북과 함께라면 3개월 내 글로벌 시장에서 베스트셀러 작가로 데뷔할 수 있습니다. 전문 고스트라이터, 마케팅 전략, 퍼블리싱까지 원스톱으로 진행하여 사장님의 시간을 최소화하고 성공 확률을 최대화하겠습니다.';
-            } else if (finalScore >= 70) {
-                recommendation = '💡 <strong>훌륭한 잠재력이 보입니다!</strong><br><br>사장님은 아마존 출간으로 큰 성공을 거둘 수 있는 탄탄한 기반을 갖추고 계십니다. 몇 가지 전략적 요소를 보완한다면 베스트셀러 진입이 충분히 가능합니다. 브랜드바이북의 1:1 맞춤 컨설팅으로 부족한 부분을 채우고, 전문가의 노하우로 출간 성공률을 높이시길 추천드립니다.';
-            } else if (finalScore >= 55) {
-                recommendation = '🚀 <strong>체계적인 준비가 필요한 단계입니다!</strong><br><br>사장님의 비즈니스는 아마존 책 출간을 통해 새로운 전환점을 맞이할 수 있습니다. 다만, 혼자서 진행하기에는 시행착오가 많을 수 있는 단계입니다. 브랜드바이북의 전문가 팀이 처음부터 끝까지 함께한다면, 시간과 비용을 절약하면서도 확실한 결과를 만들어낼 수 있습니다.';
+            if (brandValueIncrease >= 350) {
+                recommendation = '🎉 <strong>폭발적인 브랜드 가치 상승이 예상됩니다!</strong><br><br>CEO님은 아마존 출간을 통해 최대 <strong>' + brandValueIncrease + '%</strong>의 브랜드 가치 상승을 기대할 수 있습니다. 현재 보유하신 영향력, 전문성, 네트워크를 책으로 체계화한다면 글로벌 시장에서 압도적인 경쟁력을 갖추게 됩니다. 브랜드바이북과 함께 즉시 시작하세요!';
+            } else if (brandValueIncrease >= 250) {
+                recommendation = '💡 <strong>탁월한 브랜드 가치 상승 잠재력!</strong><br><br>CEO님의 브랜드 가치는 약 <strong>' + brandValueIncrease + '%</strong> 상승할 것으로 예측됩니다. 몇 가지 전략적 요소를 보완한다면 더욱 높은 성과를 거둘 수 있습니다. 브랜드바이북의 전문 컨설팅으로 부족한 부분을 채우고 성공 확률을 최대화하세요.';
+            } else if (brandValueIncrease >= 150) {
+                recommendation = '🚀 <strong>체계적인 준비로 더 큰 성과를!</strong><br><br>예상 브랜드 가치 상승률은 약 <strong>' + brandValueIncrease + '%</strong>입니다. 현재 상태에서도 긍정적인 효과를 기대할 수 있지만, 전문가의 도움으로 훨씬 더 큰 임팩트를 만들 수 있습니다. 브랜드바이북이 처음부터 끝까지 함께하겠습니다.';
             } else {
-                recommendation = '✨ <strong>전문가의 도움이 꼭 필요합니다!</strong><br><br>아마존 출간은 복잡한 프로세스와 전략이 필요한 작업입니다. 사장님께서는 현재 전문가의 도움 없이는 성공하기 어려운 단계에 계십니다. 하지만 걱정하지 마세요! 브랜드바이북은 이런 분들을 위해 존재합니다. A to Z 풀패키지 서비스로 사장님은 사업에만 집중하시고, 책 출간의 모든 것은 저희가 책임지겠습니다.';
+                recommendation = '✨ <strong>브랜드 구축의 완벽한 시작점!</strong><br><br>현재 예상 상승률은 약 <strong>' + brandValueIncrease + '%</strong>이지만, 걱정하지 마세요. 브랜드바이북의 A to Z 풀패키지로 CEO님의 숨겨진 가치를 발굴하고 극대화하겠습니다. 지금이 바로 글로벌 브랜드로 도약할 최적의 타이밍입니다!';
             }
 
             document.getElementById('recommendationText').innerHTML = recommendation;
 
             // Animate score bars
             setTimeout(() => {
-                document.querySelectorAll('.score-fill').forEach(fill => {
-                    const width = fill.style.width;
-                    fill.style.width = '0%';
+                document.querySelectorAll('.score-fill').forEach((fill, index) => {
+                    const score = questions[index].options[answers[index]].score;
+                    const scorePercent = score * 10;
                     setTimeout(() => {
-                        fill.style.width = width;
-                    }, 100);
+                        fill.style.width = scorePercent + '%';
+                    }, index * 100);
                 });
-            }, 300);
-        }
-
-        function showContactForm() {
-            document.getElementById('resultScreen').classList.add('hidden');
-            document.getElementById('contactForm').classList.remove('hidden');
-        }
-
-        async function submitForm(event) {
-            event.preventDefault();
-            
-            const formData = new FormData(event.target);
-            
-            // Calculate total score
-            let totalScore = 0;
-            questions.forEach((question, index) => {
-                const answerIndex = answers[index];
-                totalScore += question.options[answerIndex].score;
-            });
-            
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: formData.get('phone'),
-                topic: formData.get('topic'),
-                message: formData.get('message'),
-                totalScore: totalScore,
-                answers: answers.map((answerIndex, qIndex) => ({
-                    question: questions[qIndex].question,
-                    answer: questions[qIndex].options[answerIndex].text,
-                    score: questions[qIndex].options[answerIndex].score
-                })),
-                timestamp: new Date().toISOString()
-            };
-
-            // Google Sheets Web App URL (사용자가 직접 설정해야 함)
-            const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
-
-            try {
-                // Google Sheets로 데이터 전송
-                await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                // Success screen
-                document.getElementById('contactForm').classList.add('hidden');
-                document.getElementById('thankYouScreen').classList.remove('hidden');
-            } catch (error) {
-                console.error('Error:', error);
-                alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
-            }
+            }, 500);
         }
 
         // Update live participant count (simulated)
-        let participantCount = 327;
+        let participantCount = 427;
         setInterval(() => {
             const banner = document.querySelector('.stats-banner');
-            if (banner && participantCount < 400) {
+            if (banner && participantCount < 500) {
                 participantCount += Math.floor(Math.random() * 2) + 1;
-                banner.innerHTML = `🔥 이번 주에만 <strong>${participantCount}명</strong>의 사장님이 무료 진단을 완료했습니다`;
+                banner.innerHTML = `🔥 이번 달 <strong>${participantCount}명</strong>의 CEO가 자신의 브랜드 가치 상승률을 확인했습니다`;
             }
         }, 45000);
     </script>
